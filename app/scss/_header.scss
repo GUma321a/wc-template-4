@@ -36,6 +36,7 @@
 
   &__menu,
   &__menu-list {
+    margin-left: 50px;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -45,7 +46,7 @@
     position: relative;
 
     & + &{
-      margin-left: 32px;
+      margin-left: 40px;
     }
   }
 
@@ -66,8 +67,6 @@
   }
 
   &__contact-link {
-    margin-left: 48px;
-
     @media (max-width: 999px) {
       display: none;
     }

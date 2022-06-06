@@ -236,31 +236,31 @@ $caption-height: 150%;
   line-height: $caption-height;
 }
 
-// Qyote
-$caption-family: $secondary-font;
-$caption-weight: 500;
-$caption-size: 32px;
-$caption-height: 150%;
+// Quote
+$quote-family: $secondary-font;
+$quote-weight: 500;
+$quote-size: 32px;
+$quote-height: 150%;
 
-.qyote {
-  font-family: $caption-family;
-  font-weight: $caption-weight;
-  font-size: $caption-size;
-  line-height: $caption-height;
+.quote {
+  font-family: $quote-family;
+  font-weight: $quote-weight;
+  font-size: $quote-size;
+  line-height: $quote-height;
   color: $gray-100;
 }
 
 // Date
-$caption-family: $primary-font;
-$caption-weight: 400;
-$caption-size: 14px;
-$caption-height: 171%;
+$data-family: $primary-font;
+$data-weight: 400;
+$data-size: 14px;
+$data-height: 171%;
 
 .date {
-  font-family: $caption-family;
-  font-weight: $caption-weight;
-  font-size: $caption-size;
-  line-height: $caption-height;
+  font-family: $data-family;
+  font-weight: $data-weight;
+  font-size: $data-size;
+  line-height: $data-height;
   color: $gray-200;
 }
 // **************************** Typography **************************** //
@@ -281,7 +281,7 @@ $caption-height: 171%;
     mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
     -webkit-mask-size: cover;
     mask-size: cover;
-    background-color: $white;
+    background-color: $primary;
     width: 24px;
     height: 12px;
     top: 50%;
@@ -307,11 +307,11 @@ $caption-height: 171%;
   }
 
   &:hover{
-    color: $secondary;
+    color: $white;
 
     &::after{
       transform: translateY(-50%) translateX(5px);
-      background-color: $secondary;
+      background-color: $white;
     }
   }
 }
