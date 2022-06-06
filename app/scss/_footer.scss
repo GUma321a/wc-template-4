@@ -1,0 +1,80 @@
+.footer {
+  padding: 96px 0;
+  background-color: $primary;
+
+  @media (max-width: 767px){
+    padding: 64px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 767px){
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__info,
+  &__contacts{
+    flex: 0 1 400px;
+
+    @media (max-width: 767px){
+      flex: 1 1 100%;
+    }
+  }
+
+  &__info {
+ 
+    @media (max-width: 767px){
+      margin-bottom: 32px;
+    }
+  }
+
+  &__logo{
+    max-width: 150px;
+    margin-bottom: 24px;
+
+    @media (max-width: 767px){
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description,
+  &__contacts-description {
+    opacity: 0.8;
+  }
+
+  &__copy {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 24px;
+ 
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+
+  &__contacts-title {
+    margin-bottom: 16px;
+    line-height: 100%;
+
+    @media (max-width: 1299px){
+      font-size: $heading-h4-size;
+    }
+
+    @media (max-width: 767px){
+      font-size: $heading-h5-size;
+    }
+
+    @media (max-width: 576px){
+      font-size: $heading-h6-size;
+    }
+  }
+
+  &__contacts-description {
+    margin-bottom: 24px;
+  }
+}

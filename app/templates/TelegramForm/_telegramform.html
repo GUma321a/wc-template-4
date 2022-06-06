@@ -1,0 +1,30 @@
+<form class="contact-form__form telegram-form" method="POST" names="Name Email Subject Timeline Message" formTitle="Contact Form">
+  <div class="contact-form__inner">
+    <div class="contact-form__item">
+      <label for="contact-form-name" class="contact-form__label label-l">Name</label>
+      <input type="text" class="contact-form__input body-text-regular" id="contact-form-name" name="Name" placeholder="Enter your name" required>
+    </div>
+    <div class="contact-form__item">
+      <label for="contact-form-mail" class="contact-form__label label-l">Email</label>
+      <input type="email" class="contact-form__input body-text-regular" id="contact-form-mail" name="Email" placeholder="Enter your email" required>
+    </div>
+  </div>
+  <div class="contact-form__inner">
+    <div class="contact-form__item">
+      <label for="contact-form-subject" class="contact-form__label label-l">Subject</label>
+      <input type="text" class="contact-form__input body-text-regular" id="contact-form-subject" name="Subject" placeholder="Provide context">
+    </div>
+    <div class="contact-form__item">
+      <label for="contact-form-timeline" class="contact-form__label label-l">Project timeline</label>
+      <input type="text" class="contact-form__input body-text-regular" id="contact-form-timeline" name="Timeline" placeholder="Enter your timeline">
+    </div>
+  </div>
+  <div class="contact-form__message">
+    <label for="contact-form-message" class="contact-form__label label-l">Message</label>
+    <textarea class="contact-form__textarea body-text-regular" name="Message" id="contact-form-message" cols="20" rows="6" placeholder="Write your message here" required></textarea>
+  </div>
+  <button type="submit" class="contact-form__button button-ghost form-status">
+    <span class="send-text">Send Message</span>
+    <span class="success-text">Message Sent!</span>
+  </button>
+</form>

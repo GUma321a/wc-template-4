@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+button,
+svg,
+path{
+  transition: all 0.2s ease-in-out;
+}
+
+a,
+button,
+input,
+textarea{
+  outline: none;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: $white;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+  word-wrap: break-word;
+}
+
+img, svg{
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+img{
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+}
+
+section,
+footer{
+  position: relative;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: $black;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.block-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: 999px){
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.section-padding{
+  padding: 128px 0;
+
+  @media (max-width: 999px){
+    padding: 90px 0;
+  }
+
+  @media (max-width: 576px){
+    padding: 64px 0;
+  }
+}
+
+.section-margin{
+  margin: 128px 0;
+
+  @media (max-width: 999px){
+    margin: 90px 0;
+  }
+
+  @media (max-width: 576px){
+    margin: 64px 0;
+  }
+}
+
+.hero-padding{
+  padding: 218px 0 128px;
+
+  @media (max-width: 999px){
+    padding: 128px 0;
+  }
+
+  @media (max-width: 767px){
+    padding: 128px 0 90px;
+  }
+
+  @media (max-width: 576px){
+    padding: 128px 0 64px;
+  }
+}
+
+.hero-margin{
+  margin: 218px 0 128px;
+
+  @media (max-width: 999px){
+    margin: 128px 0;
+  }
+
+  @media (max-width: 767px){
+    margin: 128px 0 90px;
+  }
+
+  @media (max-width: 576px){
+    margin: 128px 0 64px;
+  }
+}
+
+.title-size-h1{
+
+  @media (max-width: 1439px){
+    font-size: $heading-h2-size;
+    line-height: $heading-h2-height;
+  }
+
+  @media (max-width: 1299px){
+    font-size: $heading-h3-size;
+  }
+
+  @media (max-width: 576px){
+    font-size: $heading-h4-size;
+  }
+}
+
+.title-size-h2{
+
+  @media (max-width: 1439px){
+    font-size: $heading-h3-size;
+  }
+
+  @media (max-width: 1299px){
+    font-size: $heading-h4-size;
+  }
+
+  @media (max-width: 576px){
+    font-size: $heading-h5-size;
+  }
+}
+
+.title-size-h3{
+  
+  @media (max-width: 1439px){
+    font-size: $heading-h4-size;
+  }
+
+  @media (max-width: 576px){
+    font-size: $heading-h5-size;
+  }
+}
+
+.homepage .homepage-link{
+  color: $primary;
+}
+
+.form-status{
+  
+  .success-text{
+    display: none;
+  }
+
+  &.success{
+    background-color: $success;
+    color: $white;
+
+    .send-text{
+      display: none;
+    }
+
+    .success-text{
+      display: inline-block;
+    }
+  }
+}
+
+.container {
+
+  @media (min-width: 577px){
+    max-width: 577px;
+  }
+
+  @media (min-width: 768px){
+    max-width: 768px;
+  }
+}
+
+.container,
+.container-fluid{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @media (min-width: 1000px){
+    max-width: 1000px;
+  }
+
+  @media (min-width: 1300px){
+    max-width: 1120px;
+  }
+
+  @media (min-width: 1440px){
+    max-width: 1300px;
+  }
+}
+
+::selection {
+  background: $primary;
+  color: $white;
+}

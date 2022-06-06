@@ -1,0 +1,143 @@
+.faq {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 999px){
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__info{
+    flex: 0 1 328px;
+
+    @media (max-width: 999px){
+      flex: 1 1 100%;
+      margin-bottom: 64px;
+    }
+
+    @media (max-width: 576px){
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 16px;
+  }
+
+  &__link{
+
+    @media (max-width: 576px){
+      font-size: $label-m-size;
+      line-height: $label-m-height;
+    }
+  }
+
+  &__accordion {
+    flex: 0 1 840px;
+    margin-top: -24px;
+
+    @media (max-width: 999px){
+      flex: 1 1 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__accordion-item {
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid #ECECF1;
+
+    &:first-child {
+      border-top: 1px solid transparent;
+    }
+  }
+
+  &__accordion-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 32px 32px 32px 90px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    @media (max-width: 999px){
+      padding: 24px 32px 24px 50px;
+      font-family: $label-l-family;
+      font-weight: $label-l-weight;
+      font-size: $label-l-size;
+      line-height: $label-l-height;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/plus.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+      right: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__accordion-trigger-number{
+    color: $royal-blue;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+
+    @media (max-width: 999px){
+      left: 0;
+    }
+  }
+
+  &__accordion-content {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    padding: 0;
+  }
+
+  &__accordion-content-text {
+    opacity: 0.85;
+    padding-left: 90px;
+
+    a{
+      color: $royal-blue;
+
+      &:hover{
+        color: $tint-blue;
+      }
+    }
+
+    @media (max-width: 999px){
+      padding-left: 50px;
+      font-size: $label-m-size;
+      line-height: $label-m-height;
+    }
+  }
+
+  .accordion__item-active {
+    .faq__accordion-content {
+      max-height: 400px !important;
+      opacity: 1 !important;
+      padding-bottom: 32px !important;
+      pointer-events: auto !important;
+
+      @media (max-width: 999px){
+        padding-bottom: 24px !important;
+      }
+    }
+
+    .faq__accordion-trigger::after {
+      transform: rotate(135deg);
+    }
+  }
+}

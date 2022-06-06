@@ -1,0 +1,387 @@
+// **************************** Colors **************************** //
+// Primary
+$primary: #BFC1FF;
+$primary-dark: #BFC1FF;
+$primary-medium: #DFE0FF;
+$primary-light: #F2F3FF;
+
+// Secondary
+$secondary: #FFBFBF;
+$secondary-dark: #FFBFBF;
+$secondary-medium: #FFDFDF;
+$secondary-light: #FFF2F2;
+
+// Third
+$third: #93E8CA;
+$third-dark: #93E8CA;
+$third-medium: #D1F1E6;
+$third-light: #EDFAF5;
+
+// Grayscale
+$black: #000000;
+$gray-900: #2C2C2C;
+$gray-800: #3A3A3C;
+$gray-700: #48484A;
+$gray-600: #636366;
+$gray-500: #8E8E93;
+$gray-400: #C7C7CC;
+$gray-300: #DBDBDB;
+$gray-200: #EDEDED;
+$gray-100: #FAFAFA;
+$white: #FFFFFF;
+
+// System
+$error: #FF453A;
+$success: #2eaa4d;
+$link: #2405F2;
+// **************************** Colors **************************** //
+
+
+
+// **************************** Typography **************************** //
+// Fonts
+$primary-font: 'Poppins';
+$secondary-font: 'Poppins';
+
+
+// Heading H1
+$heading-h1-family: $primary-font;
+$heading-h1-weight: 600;
+$heading-h1-size: 54px;
+$heading-h1-height: 137%;
+.heading-h1{
+  font-family: $heading-h1-family;
+  font-weight: $heading-h1-weight;
+  font-size: $heading-h1-size;
+  line-height: $heading-h1-height;
+}
+
+// Heading H2
+$heading-h2-family: $primary-font;
+$heading-h2-weight: 600;
+$heading-h2-size: 48px;
+$heading-h2-height: 133%;
+.heading-h2{
+  font-family: $heading-h2-family;
+  font-weight: $heading-h2-weight;
+  font-size: $heading-h2-size;
+  line-height: $heading-h2-height;
+}
+
+// Heading H3
+$heading-h3-family: $primary-font;
+$heading-h3-weight: 600;
+$heading-h3-size: 38px;
+$heading-h3-height: 147%;
+.heading-h3{
+  font-family: $heading-h3-family;
+  font-weight: $heading-h3-weight;
+  font-size: $heading-h3-size;
+  line-height: $heading-h3-height;
+}
+
+// Heading H4
+$heading-h4-family: $primary-font;
+$heading-h4-weight: 500;
+$heading-h4-size: 36px;
+$heading-h4-height: 156%;
+.heading-h4{
+  font-family: $heading-h4-family;
+  font-weight: $heading-h4-weight;
+  font-size: $heading-h4-size;
+  line-height: $heading-h4-height;
+}
+
+// Heading H5
+$heading-h5-family: $primary-font;
+$heading-h5-weight: 500;
+$heading-h5-size: 32px;
+$heading-h5-height: 150%;
+.heading-h5{
+  font-family: $heading-h5-family;
+  font-weight: $heading-h5-weight;
+  font-size: $heading-h5-size;
+  line-height: $heading-h5-height;
+}
+
+// Heading H6
+$heading-h6-family: $primary-font;
+$heading-h6-weight: 500;
+$heading-h6-size: 24px;
+$heading-h6-height: 150%;
+.heading-h6{
+  font-family: $heading-h6-family;
+  font-weight: $heading-h6-weight;
+  font-size: $heading-h6-size;
+  line-height: $heading-h6-height;
+}
+
+// subtitle M
+$subtitle-m-family: $primary-font;
+$subtitle-m-weight: 600;
+$subtitle-m-size: 24px;
+$subtitle-m-height: 150%;
+$subtitle-m-spacing: -0.03em;
+.subtitle-m{
+  font-family: $subtitle-m-family;
+  font-weight: $subtitle-m-weight;
+  font-size: $subtitle-m-size;
+  line-height: $subtitle-m-height;
+  letter-spacing: $subtitle-m-spacing;
+}
+
+// subtitle L
+$subtitle-l-family: $primary-font;
+$subtitle-l-weight: 700;
+$subtitle-l-size: 32px;
+$subtitle-l-height: 150%;
+$subtitle-l-spacing: -0.03em;
+.subtitle-l{
+  font-family: $subtitle-l-family;
+  font-weight: $subtitle-l-weight;
+  font-size: $subtitle-l-size;
+  line-height: $subtitle-l-height;
+  letter-spacing: $subtitle-l-spacing;
+}
+
+// Body text regular
+$body-text-regular-family: $primary-font;
+$body-text-regular-weight: 400;
+$body-text-regular-size: 16px;
+$body-text-regular-height: 175%;
+.body-text-regular{
+  font-family: $body-text-regular-family;
+  font-weight: $body-text-regular-weight;
+  font-size: $body-text-regular-size;
+  line-height: $body-text-regular-height;
+}
+
+// Body text medium
+$body-text-medium-family: $primary-font;
+$body-text-medium-weight: 500;
+$body-text-medium-size: 16px;
+$body-text-medium-height: 175%;
+.body-text-medium{
+  font-family: $body-text-medium-family;
+  font-weight: $body-text-medium-weight;
+  font-size: $body-text-medium-size;
+  line-height: $body-text-medium-height;
+}
+
+// Label M
+$label-m-family: $primary-font;
+$label-m-weight: 500;
+$label-m-size: 16px;
+$label-m-height: 175%;
+.label-m{
+  font-family: $label-m-family;
+  font-weight: $label-m-weight;
+  font-size: $label-m-size;
+  line-height: $label-m-height;
+}
+
+// Label L
+$label-l-family: $primary-font;
+$label-l-weight: 500;
+$label-l-size: 18px;
+$label-l-height: 178%;
+.label-l{
+  font-family: $label-l-family;
+  font-weight: $label-l-weight;
+  font-size: $label-l-size;
+  line-height: $label-l-height;
+}
+
+// Label XL
+$label-xl-family: $primary-font;
+$label-xl-weight: 500;
+$label-xl-size: 20px;
+$label-xl-height: 178%;
+.label-xl{
+  font-family: $label-xl-family;
+  font-weight: $label-xl-weight;
+  font-size: $label-xl-size;
+  line-height: $label-xl-height;
+}
+
+// Caption
+$caption-family: $primary-font;
+$caption-weight: 500;
+$caption-size: 16px;
+$caption-height: 150%;
+.caption{
+  font-family: $caption-family;
+  font-weight: $caption-weight;
+  font-size: $caption-size;
+  line-height: $caption-height;
+}
+// **************************** Typography **************************** //
+
+
+
+// **************************** Buttons **************************** //
+// Link Arrow
+.button-link-arrow{
+  position: relative;
+  padding-right: 38px;
+
+  &::after{
+    content: "";
+    position: absolute;
+    -webkit-mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+    mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $white;
+    width: 24px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.primary-dark{
+    color: $primary;
+
+    &::after{
+      background-color: $primary;
+    }
+
+    &:hover{
+      color: $secondary;
+
+      &::after{
+        background-color: $secondary;
+      }
+    }
+  }
+
+  &:hover{
+    color: $secondary;
+
+    &::after{
+      transform: translateY(-50%) translateX(5px);
+      background-color: $secondary;
+    }
+  }
+}
+
+// Call to action button
+$button-cta-family: $primary-font;
+$button-cta-weight: 500;
+$button-cta-size: 16px;
+$button-cta-height: 178%;
+$button-cta-color: $white;
+$button-cta-bg: $primary;
+$button-cta-hover: lighten($button-cta-bg, 10%);
+$button-cta-active: darken($button-cta-bg, 10%);
+$button-cta-radius: 8px;
+$button-cta-padding: 12px 32px;
+.button-cta{
+  font-family: $button-cta-family;
+  font-weight: $button-cta-weight;
+  font-size: $button-cta-size;
+  line-height: $button-cta-height;
+  color: $button-cta-color;
+  background-color: $button-cta-bg;
+  border-radius: $button-cta-radius;
+  padding: $button-cta-padding;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-color: $button-cta-hover;
+  }
+}
+
+// Ghost button
+$button-ghost-family: $primary-font;
+$button-ghost-weight: 500;
+$button-ghost-size: 16px;
+$button-ghost-height: 178%;
+$button-ghost-color: $white;
+$button-ghost-bg: $secondary;
+$button-ghost-hover: lighten($button-ghost-bg, 10%);
+$button-ghost-active: darken($button-ghost-bg, 10%);
+$button-ghost-radius: 8px;
+$button-ghost-padding: 12px 32px;
+.button-ghost{
+  font-family: $button-ghost-family;
+  font-weight: $button-ghost-weight;
+  font-size: $button-ghost-size;
+  line-height: $button-ghost-height;
+  color: $button-ghost-color;
+  background-color: $button-ghost-bg;
+  border-radius: $button-ghost-radius;
+  padding: $button-ghost-padding;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-color: $button-ghost-hover;
+  }
+}
+// **************************** Buttons **************************** //
+
+
+
+// **************************** Surfaces **************************** //
+$card-shadow-s: 0px 4px 24px rgba(0, 0, 0, 0.04);
+$card-shadow-m: 0px 8px 32px rgba(0, 0, 0, 0.06);
+$card-shadow-l: 0px 12px 40px rgba(0, 0, 0, 0.08);
+$dropdown-shadow: 0px 24px 48px rgba(0, 0, 0, 0.06);
+$overlay: rgba(25, 25, 25, 0.9);
+// **************************** Surfaces **************************** //
+
+
+
+// **************************** Keyframes **************************** //
+@-webkit-keyframes flying{
+  0% { transform: translatey(0px);}
+  50% { transform: translatey(10px);}
+  100% { transform: translatey(0px);}
+}
+@keyframes flying{
+  0% { transform: translatey(0px); }
+  50%{ transform: translatey(10px);}
+  100% { transform: translatey(0px);}
+}
+
+
+@keyframes rotations{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes rotations{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+@keyframes opacity {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes opacity {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.flying{
+  animation: flying 5s ease-in-out infinite;
+}
+
+.rotations{
+  animation: rotations 30s linear 0s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.opacity{
+  animation: opacity 4s linear infinite alternate;
+}
+// **************************** Keyframes **************************** //

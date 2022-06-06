@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png" />
+    <link rel="icon" href="./images/favicons/favicon.svg" />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#1c1e53" />
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#1c1e53" />
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#1c1e53" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WEBCIFRA" />
+    <meta property="og:description" content="Several creative people gather in the same place - that's WebCifra. We collaborate to produce the best results, loved by clients and comfortable for users. Here we maintain togetherness even though with different backgrounds, all the people here are already experts in their respective fields." />
+    <meta property="og:url" content="https://webcifra.com/" />
+    <meta property="og:image" content="./images/preview.png" />
+    <meta property="og:site_name" content="WEBCIFRA" />
+    <meta property="og:locale" content="en" />
+    <!-- Styles -->
+    <style>
+      .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background: #fff;
+        z-index: 99999;
+      }
+      .preloader__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .preloader__circle {
+        width: 20px;
+        height: 20px;
+        background-color: #1c1e53;
+        border-radius: 50%;
+        -webkit-animation: preloader-bounce 1.4s ease-in-out 0s infinite both;
+        animation: preloader-bounce 1.4s ease-in-out 0s infinite both;
+      }
+      .preloader__circle + .preloader__circle {
+        margin-left: 8px;
+      }
+      .preloader__circle--1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+      .preloader__circle--2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+      .preloader-hidden .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+      }
+      .loaded .preloader {
+        display: none;
+      }
+
+      @-webkit-keyframes preloader-bounce {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes preloader-bounce {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="body-text-regular">
+    <div class="preloader">
+      <div class="preloader__image">
+        <div class="preloader__circle preloader__circle--1"></div>
+        <div class="preloader__circle preloader__circle--2"></div>
+        <div class="preloader__circle preloader__circle--3"></div>
+      </div>
+    </div>
+
+    <div class="overflow-hidden">
+      <header class="header">
+        <div class="container-fluid">
+          <div class="header__navbar">
+            <div class="header__logo">
+              <a href="." class="header__logo-link"><img src="./images/logo.svg" alt="Logo" /></a>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list body-text-medium">
+                <li class="header__menu-list-item"><a class="header__menu-list-link homepage-link" href=".">Home</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./about.html">About us</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./features.html">Features</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./pricing.html">Pricing</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./work.html">Our work</a></li>
+                <li class="header__menu-list-item header__menu-list-item--menu"><a class="header__menu-list-link" href="./contact.html">Contact us</a></li>
+              </ul>
+              <a href="./contact.html" class="header__contact-link button-cta">Contact us</a>
+            </nav>
+            <div class="burger"><span></span></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main"></main>
+
+      <footer class="footer body-text-regular">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__info">
+              <div class="footer__logo">
+                <img src="./images/logo.svg" alt="Logo" />
+              </div>
+              <p class="footer__description label-m">We are always open to discuss your project and improve your online presence.</p>
+              <p class="footer__copy body-text-medium">Copyright 2022, webcifra.com</p>
+            </div>
+            <div class="footer__contacts">
+              <p class="footer__contacts-title heading-h3">Lets Talk!</p>
+              <p class="footer__contacts-description">We love receiving messages from you, we are waiting for it.</p>
+              <a href="./contact.html" class="footer__contacts-link label-m button-link-arrow">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script>
+      window.onload = function () {
+        document.body.classList.add('preloader-hidden');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('preloader-hidden');
+        }, 500);
+      };
+    </script>
+  </body>
+</html>
