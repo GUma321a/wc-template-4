@@ -2,14 +2,14 @@
 // Primary
 $primary: #FFB577;
 
-
 // Secondary
 $secondary: #1F1D21;
-
 
 // Third
 $third: #19161B;
 
+// Text
+$dark: #2E2D33;
 
 // Grayscale
 $black: #000000;
@@ -87,6 +87,7 @@ $heading-h4-height: 150%;
   font-weight: $heading-h4-weight;
   font-size: $heading-h4-size;
   line-height: $heading-h4-height;
+  color: $white;
 }
 
 // Heading H5
@@ -317,30 +318,41 @@ $data-height: 171%;
 }
 
 // Call to action button
-$button-cta-family: $primary-font;
-$button-cta-weight: 500;
-$button-cta-size: 16px;
-$button-cta-height: 178%;
-$button-cta-color: $white;
+$button-cta-color: $dark;
 $button-cta-bg: $primary;
 $button-cta-hover: lighten($button-cta-bg, 10%);
 $button-cta-active: darken($button-cta-bg, 10%);
-$button-cta-radius: 8px;
-$button-cta-padding: 12px 32px;
+$button-cta-padding: 12px 53px 12px 24px;
 .button-cta{
-  font-family: $button-cta-family;
-  font-weight: $button-cta-weight;
-  font-size: $button-cta-size;
-  line-height: $button-cta-height;
   color: $button-cta-color;
   background-color: $button-cta-bg;
-  border-radius: $button-cta-radius;
   padding: $button-cta-padding;
   text-align: center;
   transition: all 0.2s ease-in-out;
+  position: relative;
+
+  &::after {
+      content: "";
+      position: absolute;
+      -webkit-mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+      mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: $dark;
+      width: 24px;
+      height: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+      transition: all 0.2s ease-in-out;
+    }
 
   &:hover{
     background-color: $button-cta-hover;
+
+    &::after{
+      transform: translateY(-50%) translateX(5px);
+    }
   }
 }
 

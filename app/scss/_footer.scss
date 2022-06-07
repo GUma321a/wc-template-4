@@ -25,7 +25,8 @@
   }
 
   &__menu-item {
-    &+& {
+
+    & + & {
         margin-left: 40px;
       }
   }
@@ -37,6 +38,7 @@
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
+
     &::before{
       content: '';
       position: absolute;
@@ -58,14 +60,22 @@
   }
 
   &__links-social-item {
-    &+& {
+
+    &:hover{
+      
+      svg path{
+        fill: $primary;
+      }
+    }
+
+    & + & {
       margin-left: 24px;
     }
 
     img {
       width: 14px;
       height: 14px;
-      
+
     }
   }
 

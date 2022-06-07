@@ -1,0 +1,49 @@
+.hero {
+  
+  &__wrapper {
+    align-items: center;
+  }
+
+  &__info,
+  &__image{
+    flex: 0 1 45%;
+
+    @media (max-width: 999px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__info {
+ 
+    @media (max-width: 999px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    margin-top: 40px;
+    max-width: 450px;
+  }
+
+  &__list-item {
+    
+    & + &{
+      margin-top: 16px;
+    }
+  }
+
+  &__list-link{
+
+    &:hover{
+      color: $primary;
+    }
+  }
+}
