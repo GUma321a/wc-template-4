@@ -1,0 +1,17 @@
+.double__images {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 45%;
+  flex: 0 1 45%;
+  gap: 48px;
+
+  &--1 {
+    position: relative;
+    top: 16%;
+  }
+}

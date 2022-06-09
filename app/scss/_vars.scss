@@ -62,7 +62,7 @@ $heading-h2-height: 121%;
   font-weight: $heading-h2-weight;
   font-size: $heading-h2-size;
   line-height: $heading-h2-height;
-  color: $gray-100;
+  color: $white;
 }
 
 // Heading H3
@@ -230,11 +230,13 @@ $caption-family: $secondary-font;
 $caption-weight: 400;
 $caption-size: 16px;
 $caption-height: 150%;
+$caption-color: $primary;
 .caption{
   font-family: $caption-family;
   font-weight: $caption-weight;
   font-size: $caption-size;
   line-height: $caption-height;
+  color: $caption-color;
 }
 
 // Quote

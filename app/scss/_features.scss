@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  gap: 32px;
+
+  &__item {
+    flex: 0 1 33%;
+  }
+
+  &__item-number {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      mask: url(../images/icons/features-item-icon.svg) no-repeat 50% 50%;
+      -webkit-mask: url(../images/icons/features-item-icon.svg) no-repeat 50% 50%;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      width: 13px;
+      height: 31px;
+      background: $primary;
+      left: 0;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+  }
+
+  &__item-text {}
+}

@@ -1,0 +1,38 @@
+.section-heading {
+  &__wrapper {
+    gap: 102px;
+  }
+
+  &__inner {
+    flex: 0 1 55%;
+
+    @media (max-width: 999px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__tagline {
+    margin-bottom: 24px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      max-width: 48px;
+      width: 100%;
+      background-color: $white;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}

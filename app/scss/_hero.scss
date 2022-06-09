@@ -2,11 +2,12 @@
   
   &__wrapper {
     align-items: center;
+    gap: 32px ;
   }
 
   &__info,
   &__image{
-    flex: 0 1 45%;
+    flex: 0 1 50%;
 
     @media (max-width: 999px) {
       flex: 1 1 100%;
