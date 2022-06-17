@@ -1,4 +1,13 @@
 .about {
+
+  &__inner{
+    flex: 0 1 50%;
+
+    @media (max-width: 999px) {
+      margin-bottom: 64px;
+    }
+  }
+
   &_button {
     margin-top: 32px;
   }

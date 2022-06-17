@@ -1,7 +1,4 @@
 .section-heading {
-  &__wrapper {
-    gap: 102px;
-  }
 
   &__inner {
     flex: 0 1 55%;
@@ -14,6 +11,7 @@
   &__tagline {
     margin-bottom: 24px;
     position: relative;
+    display: inline-block;
 
     &::after {
       content: '';
@@ -24,15 +22,14 @@
       background-color: $white;
       top: 50%;
       transform: translateY(-50%);
-      left: 30%;
+      left: 110%;
     }
   }
 
   &__title {
-    margin-bottom: 32px;
-  }
 
-  &__text {
-    margin-bottom: 40px;
+    & + .section-heading__text{
+      margin-top: 32px;
+    }
   }
 }

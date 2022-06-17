@@ -5,13 +5,20 @@
   grid-row-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 45%;
   flex: 0 1 45%;
   gap: 48px;
+  padding-bottom: 140px;
 
-  &--1 {
+  img + img{
     position: relative;
-    top: 16%;
+      top: 16%;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
   }
 }

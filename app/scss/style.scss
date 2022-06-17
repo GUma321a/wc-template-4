@@ -4,12 +4,15 @@
 @import "_global";
 @import "_header";
 @import "_footer";
-
+@import "_utilities";
 
 // Sections
 @import '_hero';
 @import '_about';
+@import '_service';
+
 //Components
 @import '_double-images';
 @import '_features';
 @import '_section-heading';
+@import '_cards';

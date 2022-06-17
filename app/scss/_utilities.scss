@@ -1,0 +1,44 @@
+.mt-40{
+  margin-top: 40px;
+
+  @media (max-width: 576px) {
+    margin-top: 24px;
+  }
+}
+
+.mt-48{
+  margin-top: 48px;
+
+  @media (max-width: 576px) {
+      margin-top: 24px;
+    }
+}
+
+.mb-40{
+  margin-bottom: 40px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 24px;
+  }
+}
+
+.flex-40{
+  flex: 0 1 40%;
+}
+
+.flex-50{
+  flex: 0 1 50%;
+}
+
+.flex-60{
+  flex: 0 1 60%;
+}
+
+.flex-40,
+.flex-50,
+.flex-60{
+
+  @media (max-width: 999px) {
+    flex: 1 1 100%;
+  }
+}
