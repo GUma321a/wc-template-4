@@ -10,6 +10,9 @@
 
   &__item {
     background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__item-wrapper{

@@ -5,6 +5,7 @@
 @import "_header";
 @import "_footer";
 @import "_utilities";
+// @import "../templates/Tabs/_tabs";
 
 // Sections
 @import '_hero';
@@ -13,6 +14,8 @@
 @import '_preview';
 @import '_testimonials';
 @import '_blog-latest';
+@import '_map';
+@import '_menu-tabs';
 
 //Components
 @import '_double-images';

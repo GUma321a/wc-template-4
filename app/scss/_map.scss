@@ -1,0 +1,43 @@
+.map {
+  &__wrapper {
+    background-color: $secondary;
+  }
+
+  &__info {
+    flex: 0 1 30%;
+    padding: 64px 80px;
+
+    @media (max-width: 999px) {
+      text-align: center;
+    }
+  }
+
+  &__info-item {
+
+    & + &{
+      margin-top: 32px;
+    }
+  }
+
+  &__info-item-title {
+    margin-bottom: 8px;
+  }
+
+  &__info-item-text {}
+
+  &__info-link {
+
+    &:hover{
+      color: $primary;
+    }
+  }
+
+  &__frame {
+    flex: 0 1 70%;
+
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

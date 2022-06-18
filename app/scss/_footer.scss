@@ -1,5 +1,5 @@
 .footer {
-  padding: 160px 0 23px;
+  margin: 160px 0 23px;
   background-color: $third;
 
   @media (max-width: 767px){
@@ -22,22 +22,39 @@
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
   }
 
   &__menu-item {
+
+    @media (max-width: 767px) {
+      flex: 0 1 33%;
+      margin-left: 0 !important; 
+      text-align: center;
+    }
 
     & + & {
         margin-left: 40px;
       }
   }
 
-  &__menu-item-link {}
+  &__menu-item-link {
+
+    @media (max-width: 999px) {
+      padding: 0;
+    }
+  }
 
   &__links {
     position: relative;
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
+    gap: 16px;
 
     &::before{
       content: '';
@@ -48,15 +65,19 @@
       height: 1px;
       background-color: rgba(255, 255, 255, 0.07)
     }
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 
-  
+  &__links-item{
+    margin: 0 10px;
+  }
 
   &__links-copy {}
 
   &__links-social {
-    position: relative;
-    right: 7%;
   }
 
   &__links-social-item {

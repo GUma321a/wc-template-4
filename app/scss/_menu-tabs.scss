@@ -1,0 +1,9 @@
+.menu-tabs {
+  &__wrapper {
+    a + a{
+      margin-left: 32px;
+    }
+  }
+}
+
+
