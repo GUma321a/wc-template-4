@@ -75,7 +75,7 @@ $heading-h3-height: 150%;
   font-weight: $heading-h3-weight;
   font-size: $heading-h3-size;
   line-height: $heading-h3-height;
-  color: $white;
+  color: $gray-100;
 }
 
 // Heading H4
@@ -201,18 +201,18 @@ $body-text-regular-height: 175%;
 // }
 
 // Label S
-// $label-s-family: $primary-font;
-// $label-s-weight: 500;
-// $label-s-size: 12px;
-// $label-s-height: 133%;
+$label-s-family: $primary-font;
+$label-s-weight: 500;
+$label-s-size: 12px;
+$label-s-height: 133%;
 
-// .label-s {
-//   font-family: $label-s-family;
-//   font-weight: $label-s-weight;
-//   font-size: $label-s-size;
-//   line-height: $label-s-height;
-//   color: rgba(255, 255, 255, 0.6);
-// }
+.label-s {
+  font-family: $label-s-family;
+  font-weight: $label-s-weight;
+  font-size: $label-s-size;
+  line-height: $label-s-height;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 // Label M
 $label-m-family: $primary-font;
@@ -224,6 +224,7 @@ $label-m-height: 150%;
   font-weight: $label-m-weight;
   font-size: $label-m-size;
   line-height: $label-m-height;
+  color: $gray-100;
 }
 
 // Caption

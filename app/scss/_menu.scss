@@ -21,6 +21,8 @@
   &__item-info {
     display: flex;
     justify-content: space-between;
+    padding: 32px;
+    background-color: $secondary;
   }
 
   &__item-title {}

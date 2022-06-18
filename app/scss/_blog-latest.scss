@@ -1,0 +1,37 @@
+.blog-latest {
+  &__title {}
+
+  &__wrapper {
+
+    @media (max-width: 999px) {
+        gap: 30px;
+      }
+  }
+
+  &__item {
+    background-color: $secondary;
+  }
+
+  &__item-wrapper{
+    padding: 32px;
+
+    @media (max-width: 767px) {
+      padding: 16px;
+    }
+  }
+
+  &__item-date {
+    margin-bottom: 8px;
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+  }
+
+  &__item-text {}
+
+  &__item-image {
+    display: flex;
+    justify-content: center;
+  }
+}
