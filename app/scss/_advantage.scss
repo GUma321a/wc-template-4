@@ -1,0 +1,17 @@
+.advantage {
+  &__wrapper {}
+
+  &__title {
+    flex: 0 1 40%;
+  }
+
+  &__text {
+    flex: 0 1 50%;
+  }
+
+  &__text-title {}
+
+  &__text-description {
+    margin-top: 24px;
+  }
+}

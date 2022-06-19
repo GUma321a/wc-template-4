@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  justify-content: space-around;
+  justify-content: flex-start;
   
   &__item {
     flex: 0 1 31%;

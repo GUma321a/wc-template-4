@@ -1,0 +1,46 @@
+.timeline {
+  &__chronology {
+    background-color: $secondary;
+    padding: 80px;
+  }
+
+  &__chronology-title{
+    margin-bottom: 72px;
+  }
+
+  &__chronology-wrapper {
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: '';
+      border: 2px dashed rgba(255, 255, 255, 0.15);
+      width: 100%;
+      height: 2px;
+      top: -10%;
+    }
+  }
+
+  &__chronology-item {
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      background-color: $primary;
+      top: -10%;
+    }
+  }
+
+  &__chronology-item-year {}
+
+  &__chronology-item-title {
+    margin-top: 16px;
+  }
+
+  &__chronology-item-text {
+    margin-top: 16px;
+  }
+}

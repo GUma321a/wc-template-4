@@ -1,0 +1,32 @@
+.story {
+  &__wrapper {}
+
+  &__item {
+    flex: 0 1 45%;
+  }
+
+  &__item-title {
+    margin-bottom: 24px;
+  }
+
+  &__item-text {}
+
+  &__description {
+    flex: 0 1 45%;
+  }
+
+  &__description-title {
+    margin-bottom: 24px;
+
+    span{
+      color: $primary;
+    }
+  }
+
+  &__description-tetx {
+
+    & + &{
+      margin-top: 16px;
+    }
+  }
+}

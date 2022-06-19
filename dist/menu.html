@@ -122,10 +122,10 @@
               <ul class="header__menu-list">
                 <li class="header__menu-list-item"><a class="header__menu-list-link homepage-link" href=".">Home</a></li>
                 <li class="header__menu-list-item"><a class="header__menu-list-link" href="./menu.html">Menu</a></li>
-                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./features.html">About Us</a></li>
-                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./pricing.html">Our Story</a></li>
-                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./work.html">Blog</a></li>
-                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./work.html">Contact</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./about-us.html">About Us</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./our-story.html">Our Story</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./blog.html">Blog</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="./contact.html">Contact</a></li>
                 <li class="header__menu-list-item header__menu-list-item--menu"><a class="header__menu-list-link" href="./contact.html">Contact us</a></li>
               </ul>
             </nav>
@@ -150,16 +150,16 @@
         <section class="menu-tabs section-margin">
           <div class="container">
             <div class="menu-tabs__wrapper">
-              <a href="#all" data-tab="all" class="b-nav-tab active"> All </a>
-              <a href="#fastfood" data-tab="fastfood" class="b-nav-tab"> Fast Food </a>
-              <a href="#cofee" data-tab="cofee" class="b-nav-tab"> Cofee </a>
-              <a href="#cocktails" data-tab="cocktails" class="b-nav-tab"> Cocktails </a>
-              <a href="#quafecake" data-tab="quafecake" class="b-nav-tab"> Quafe Cake </a>
-              <a href="#snacks" data-tab="snacks" class="b-nav-tab"> Snacks </a>
+              <span class="filter" data-filter="all">All</span>
+              <span class="filter" data-filter="fastfood">Fast Food</span>
+              <span class="filter" data-filter="cofee">Cofee</span>
+              <span class="filter" data-filter="cocktails">Cocktails</span>
+              <span class="filter" data-filter="quafecake">Quafe Cake</span>
+              <span class="filter" data-filter="snacks">Snacks</span>
             </div>
-            <div class="menu mt-64">
-              <div class="menu__item">
-                <div id="cofee" class="menu__item-image b-tab active">
+            <div class="menu filter-menu mt-64">
+              <div class="menu__item filter-item" data-filter="coffe">
+                <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-1.jpg" alt="menu-item" load="lazy" />
                 </div>
                 <div class="menu__item-info">
@@ -167,7 +167,8 @@
                   <div class="menu__item-price subtitle-m">$8.85</div>
                 </div>
               </div>
-              <div id="quafecake" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="quafecake">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-2.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -176,7 +177,8 @@
                   <div class="menu__item-price subtitle-m">$4.85</div>
                 </div>
               </div>
-              <div id="fastfood" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="fastfood">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-3.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -185,7 +187,8 @@
                   <div class="menu__item-price subtitle-m">$8.85</div>
                 </div>
               </div>
-              <div id="fastfood" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="fastfood">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-4.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -194,7 +197,8 @@
                   <div class="menu__item-price subtitle-m">$7.85</div>
                 </div>
               </div>
-              <div id="snacks" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="snacks">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-5.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -203,7 +207,8 @@
                   <div class="menu__item-price subtitle-m">$3.97</div>
                 </div>
               </div>
-              <div id="snacks" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="snacks">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-6.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -212,7 +217,8 @@
                   <div class="menu__item-price subtitle-m">$8.85</div>
                 </div>
               </div>
-              <div id="cofee" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="cofee">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-7.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -221,7 +227,8 @@
                   <div class="menu__item-price subtitle-m">$7.85</div>
                 </div>
               </div>
-              <div id="cofee" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="cofee">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-8.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -230,7 +237,8 @@
                   <div class="menu__item-price subtitle-m">$4.97</div>
                 </div>
               </div>
-              <div id="snacks" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="snacks">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-9.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -239,7 +247,8 @@
                   <div class="menu__item-price subtitle-m">$8.85</div>
                 </div>
               </div>
-              <div id="cocktails" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="cocktails">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-10.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -248,7 +257,8 @@
                   <div class="menu__item-price subtitle-m">$7.85</div>
                 </div>
               </div>
-              <div id="snacks" class="menu__item b-tab">
+
+              <div class="menu__item filter-item-1" data-filter="snacks">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-11.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -257,7 +267,8 @@
                   <div class="menu__item-price subtitle-m">$3.97</div>
                 </div>
               </div>
-              <div id="cocktails" class="menu__item b-tab">
+
+              <div class="menu__item filter-item" data-filter="cocktails">
                 <div class="menu__item-image">
                   <img src="./images/illustrations/home-preview-menu-12.jpg" alt="menu-item" load="lazy" />
                 </div>
@@ -266,10 +277,165 @@
                   <div class="menu__item-price subtitle-m">$8.85</div>
                 </div>
               </div>
+
+              <!-- <div class="menu__item b-tab active" id='cofee'>
+        <div class="menu__item-image ">
+          <img src="./images/illustrations/home-preview-menu-1.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">Drp Cofee</h4>
+          <div class="menu__item-price subtitle-m">
+            $8.85
+          </div>
+        </div>
+      </div>
+      <div id="quafecake" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-2.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Choco Cup Cake
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $4.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="fastfood" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-3.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Chicken Burger
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $8.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="fastfood" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-4.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            French Fries
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $7.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="snacks" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-5.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Sandwitch
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $3.97
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="snacks" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-6.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Chinese Soup
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $8.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="cofee" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-7.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Quafe Brade
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $7.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="cofee" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-8.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Dalgona Cofee
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $4.97
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id='snacks' class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-9.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Chowmin Noodle
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $8.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="cocktails" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-10.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Coka Cola
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $7.85
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="snacks" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-11.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Fruit Salad
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $3.97
+          </div>
+        </div>
+      </div> -->
+              <!-- <div id="cocktails" class="menu__item b-tab">
+        <div class="menu__item-image">
+          <img src="./images/illustrations/home-preview-menu-12.jpg" alt="menu-item" load="lazy">
+        </div>
+        <div class="menu__item-info">
+          <h4 class="menu__item-title heading-h4">
+            Cocktail
+          </h4>
+          <div class="menu__item-price subtitle-m">
+            $8.85
+          </div>
+        </div>
+      </div> -->
             </div>
           </div>
         </section>
-        <section class="map section-margin">
+        <section class="map section-margin mb-0">
           <div class="container">
             <div class="map__wrapper block-wrapper">
               <div class="map__info">
@@ -311,10 +477,10 @@
             <ul class="footer__menu ladel-m">
               <li class="footer__menu-item"><a href="." class="footer__menu-item-link header__menu-list-link">Home</a></li>
               <li class="footer__menu-item"><a href="./menu.html" class="footer__menu-item-link header__menu-list-link">Menu</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link header__menu-list-link">About Us</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link header__menu-list-link">Our Story</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link header__menu-list-link">Blog</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link header__menu-list-link">Contact</a></li>
+              <li class="footer__menu-item"><a href="./about-us.html" class="footer__menu-item-link header__menu-list-link">About Us</a></li>
+              <li class="footer__menu-item"><a href="./our-story.html" class="footer__menu-item-link header__menu-list-link">Our Story</a></li>
+              <li class="footer__menu-item"><a href="./blog.html" class="footer__menu-item-link header__menu-list-link">Blog</a></li>
+              <li class="footer__menu-item"><a href="./contact.html" class="footer__menu-item-link header__menu-list-link">Contact</a></li>
             </ul>
             <div class="footer__links">
               <div class="footer__links-copy footer__links-item">© 2021 Finsweet | All rights reserved.</div>

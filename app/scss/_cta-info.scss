@@ -1,0 +1,40 @@
+.cta-info {
+
+  &__wrapper {
+    padding: 124px 60px;
+    background: url(../images/illustrations/history-heading.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    display: flex;
+
+    &:before {
+        position: absolute;
+        content: '';
+        background: linear-gradient(97.28deg, rgba(25, 22, 27, 0.92) 34.6%, rgba(25, 22, 27, 0) 83.17%);
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        user-select: none;
+        left: 0;
+        top: 0;
+    }
+  }
+
+  &__inner{
+    position: relative;
+    flex: 0 1 50%;
+  }
+
+  &__title {
+
+  span {
+      color: $primary;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+}
