@@ -1,0 +1,41 @@
+.post-autor {
+
+  &__inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 40px;
+    height: 40px;
+ 
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__info {}
+
+  &__name {}
+
+  &__date {}
+
+  &__button {
+    display: flex;
+    align-items: center;
+    color: $white;
+  
+    &:hover {
+      color: $primary;
+  
+      &::after {
+        background-color: $primary;
+      }
+    }
+  
+    @media (max-width: 999px) {
+      margin-top: 20px;
+    }
+  }
+}

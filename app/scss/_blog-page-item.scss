@@ -1,0 +1,28 @@
+.blog-page {
+  &__title {
+    position: relative;
+    text-align: center;
+    padding-top: 32px;
+
+    &::before{
+      content: '';
+      background-color: rgba(255, 255, 255, 0.05);
+      width: 75%;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__image {
+    margin: 80px 0;
+  }
+
+  &__subtitle {}
+
+  &__text {}
+
+  &__block {}
+}

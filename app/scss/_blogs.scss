@@ -1,0 +1,28 @@
+.blogs {
+  &__title {
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 1 45%;
+
+    @media (max-width: 999px) {
+      & + &{
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__item-wrapper {
+    align-items: center;
+  }
+
+  &__item-image {
+    flex: 0 1 50%;
+  }
+}
