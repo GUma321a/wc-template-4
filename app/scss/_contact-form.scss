@@ -1,0 +1,52 @@
+.contact-form {
+  &__wrapper {}
+
+  &__form {}
+
+  &__title {
+    max-width: 515px;
+  }
+
+  &__text {}
+
+  &__wrapper{
+    margin-bottom: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__item{
+
+    input{
+
+    }
+  }
+
+  &__message {
+
+    textarea{
+      width: 100%;
+      resize: none;
+    }
+  }
+
+  &__message,
+  &__item{
+
+    textarea,
+    input{
+      padding: 14px 32px;
+      border-color: rgba(255, 255, 255, 0.04);
+      background: $third;
+      color: $white;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+}
