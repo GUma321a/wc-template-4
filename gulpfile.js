@@ -16,8 +16,8 @@ const connect = ftp.create(ftpConfig);
 
 function deploy(){
   return src(["dist/**/*.*"])
-    .pipe(connect.newer("www/gumaink.site/projects/projectname/"))
-    .pipe(connect.dest("www/gumaink.site/projects/projectname/"));
+    .pipe(connect.newer("www/gumaink.site/projects/wc-template-4/"))
+    .pipe(connect.dest("www/gumaink.site/projects/wc-template-4/"));
 }
 
 function html(){

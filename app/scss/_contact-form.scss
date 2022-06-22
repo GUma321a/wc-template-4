@@ -48,5 +48,28 @@
       font-size: 16px;
       line-height: 120%;
     }
+
+    textarea::placeholder,
+    input::placeholder{
+      color: $white;
+    }
+  }
+
+  &__button-cta{
+    color: $white;
+    background-color: $gray-800;
+
+    &::after{
+      background-color: $primary;
+    }
+
+    &:hover{
+      color: $dark;
+      background-color: $primary;
+    }
+
+    &:hover::after{
+      background-color: $dark;
+    }
   }
 }
