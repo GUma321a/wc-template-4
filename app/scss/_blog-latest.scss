@@ -1,11 +1,7 @@
 .blog-latest {
-  &__title {}
-
   &__wrapper {
-
-    @media (max-width: 999px) {
-        gap: 30px;
-      }
+    flex-wrap: wrap;
+    justify-content: start;
   }
 
   &__item {
@@ -13,6 +9,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex: 0 1 30%;
+
+    @media (max-width: 999px) {
+      flex: 0 1 100%;
+
+      & + &{
+        margin-top: 24px;
+      }
+    }
   }
 
   &__item-wrapper{
@@ -30,8 +35,6 @@
   &__item-title {
     margin-bottom: 16px;
   }
-
-  &__item-text {}
 
   &__item-image {
     display: flex;

@@ -9,6 +9,15 @@
 
     @media (max-width: 999px) {
       text-align: center;
+      padding: 48px 60px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 30px 50px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 20px 30px;
     }
   }
 
@@ -22,8 +31,6 @@
   &__info-item-title {
     margin-bottom: 8px;
   }
-
-  &__info-item-text {}
 
   &__info-link {
 

@@ -9,6 +9,14 @@
     position: relative;
     display: flex;
 
+    @media (max-width: 767px) {
+      padding: 80px 45px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 40px 25px;
+    }
+
     &:before {
         position: absolute;
         content: '';
@@ -19,12 +27,20 @@
         user-select: none;
         left: 0;
         top: 0;
+
+        @media (max-width: 576px) {
+          background: linear-gradient(97.28deg, rgba(25, 22, 27, 0.92) 34.6%, rgba(25, 22, 27, 0) 140%);
+        }
     }
   }
 
   &__inner{
     position: relative;
     flex: 0 1 50%;
+
+    @media (max-width: 576px) {
+      flex: 0 1 100%;
+    }
   }
 
   &__title {

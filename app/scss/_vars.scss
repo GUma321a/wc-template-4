@@ -43,6 +43,8 @@ $secondary-font: 'Playfair Display';
 $heading-h1-family: $secondary-font;
 $heading-h1-weight: 700;
 $heading-h1-size: 56px;
+$heading-h1-size-media: 40px;
+$heading-h1-size-small: 36px;
 $heading-h1-height: 121%;
 .heading-h1{
   font-family: $heading-h1-family;
@@ -50,12 +52,22 @@ $heading-h1-height: 121%;
   font-size: $heading-h1-size;
   line-height: $heading-h1-height;
   color: $white;
+
+  @media (max-width: 999px) {
+    font-size: $heading-h1-size-media;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $heading-h1-size-small;
+  }
 }
 
 // Heading H2
 $heading-h2-family: $secondary-font;
 $heading-h2-weight: 700;
 $heading-h2-size: 48px;
+$heading-h2-size-medium: 36px;
+$heading-h2-size-small: 30px;
 $heading-h2-height: 121%;
 .heading-h2{
   font-family: $heading-h2-family;
@@ -63,12 +75,22 @@ $heading-h2-height: 121%;
   font-size: $heading-h2-size;
   line-height: $heading-h2-height;
   color: $white;
+
+  @media (max-width: 999px) {
+    font-size: $heading-h2-size-medium;
+  }
+
+  @media (max-width: 999px) {
+    font-size: $heading-h2-size-small;
+  }
 }
 
 // Heading H3
 $heading-h3-family: $secondary-font;
 $heading-h3-weight: 700;
 $heading-h3-size: 32px;
+$heading-h3-size-medium: 26px;
+$heading-h3-size-small: 20px;
 $heading-h3-height: 150%;
 .heading-h3{
   font-family: $heading-h3-family;
@@ -76,12 +98,21 @@ $heading-h3-height: 150%;
   font-size: $heading-h3-size;
   line-height: $heading-h3-height;
   color: $gray-100;
+
+  @media (max-width: 999px) {
+    font-size: $heading-h3-size-medium;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $heading-h3-size-small;
+  }
 }
 
 // Heading H4
 $heading-h4-family: $secondary-font;
 $heading-h4-weight: 700;
 $heading-h4-size: 20px;
+$heading-h4-size-small: 16px;
 $heading-h4-height: 150%;
 .heading-h4{
   font-family: $heading-h4-family;
@@ -89,6 +120,10 @@ $heading-h4-height: 150%;
   font-size: $heading-h4-size;
   line-height: $heading-h4-height;
   color: $white;
+
+  @media (max-width: 767px) {
+    font-size: $heading-h4-size-small;
+  }
 }
 
 // Heading H5
@@ -109,6 +144,8 @@ $heading-h5-height: 150%;
 $title-s-family: $secondary-font;
 $title-s-weight: 700;
 $title-s-size: 36px;
+$title-s-size-medium: 30px;
+$title-s-size-small: 24px;
 $title-s-height: 132%;
 
 .title-s {
@@ -117,12 +154,22 @@ $title-s-height: 132%;
   font-size: $title-s-size;
   line-height: $title-s-height;
   color: $gray-100;
+
+  @media (max-width: 999px) {
+    font-size: $title-s-size-medium;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $title-s-size-small;
+  }
 }
 
 // title M
 $title-m-family: $secondary-font;
 $title-m-weight: 600;
 $title-m-size: 48px;
+$title-m-size-medium: 40px;
+$title-m-size-small: 32px;
 $title-m-height: 133%;
 
 .title-m {
@@ -130,6 +177,14 @@ $title-m-height: 133%;
   font-weight: $title-m-weight;
   font-size: $title-m-size;
   line-height: $title-m-height;
+
+  @media (max-width: 999px) {
+    font-size: $title-m-size-medium;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $title-m-size-small;
+  }
 }
 
 
@@ -137,6 +192,7 @@ $title-m-height: 133%;
 $subtitle-s-family: $primary-font;
 $subtitle-s-weight: 500;
 $subtitle-s-size: 24px;
+$subtitle-s-size-small: 20px;
 $subtitle-s-height: 150%;
 
 .subtitle-s {
@@ -145,12 +201,17 @@ $subtitle-s-height: 150%;
   font-size: $subtitle-s-size;
   line-height: $subtitle-s-height;
   color: $number;
+
+  @media (max-width: 767px) {
+    font-size: $subtitle-s-size-small;
+  }
 }
 
 // subtitle M
 $subtitle-m-family: $primary-font;
 $subtitle-m-weight: 500;
 $subtitle-m-size: 20px;
+$subtitle-m-size: 16px;
 $subtitle-m-height: 160%;
 .subtitle-m{
   font-family: $subtitle-m-family;
@@ -158,6 +219,10 @@ $subtitle-m-height: 160%;
   font-size: $subtitle-m-size;
   line-height: $subtitle-m-height;
   color: $gray-100;
+
+  @media (max-width: 767px) {
+    font-size: $subtitle-s-size-small;
+  }
 }
 
 
@@ -219,6 +284,7 @@ $label-s-height: 133%;
 $label-m-family: $primary-font;
 $label-m-weight: 500;
 $label-m-size: 16px;
+$label-m-size-small: 14px;
 $label-m-height: 150%;
 .label-m{
   font-family: $label-m-family;
@@ -226,12 +292,17 @@ $label-m-height: 150%;
   font-size: $label-m-size;
   line-height: $label-m-height;
   color: $gray-100;
+
+  @media (max-width: 767px) {
+    font-size: $label-m-size-small;
+  }
 }
 
 // Caption
 $caption-family: $secondary-font;
 $caption-weight: 400;
 $caption-size: 16px;
+$caption-size-small: 14px;
 $caption-height: 150%;
 $caption-color: $primary;
 .caption{
@@ -240,12 +311,17 @@ $caption-color: $primary;
   font-size: $caption-size;
   line-height: $caption-height;
   color: $caption-color;
+
+  @media (max-width: 756px) {
+    font-size: $caption-size-small;
+  }
 }
 
 // Quote
 $quote-family: $secondary-font;
 $quote-weight: 500;
 $quote-size: 32px;
+$quote-size-small: 24px; 
 $quote-height: 150%;
 
 .quote {
@@ -254,6 +330,10 @@ $quote-height: 150%;
   font-size: $quote-size;
   line-height: $quote-height;
   color: $gray-100;
+
+  @media (max-width: 767px) {
+    font-size: $quote-size-small;
+  }
 }
 
 // Date
@@ -434,6 +514,42 @@ $overlay: rgba(25, 25, 25, 0.9);
   0% {opacity: 1;}
   50% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@keyframes hide {
+  0% {opacity: 1;}
+  99% {transform: scale(0);}
+  100% {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {opacity: 1;}
+  99% {transform: scale(0);}
+  100% {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  99% {transform: scale(1);}
+  100% {
+    position: static;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {opacity: 0;}
+  99% {transform: scale(1);}
+  100% {
+    position: static;
+    opacity: 1;
+  }
 }
 
 

@@ -2,8 +2,21 @@
   display: flex;
   gap: 32px;
 
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
   &__item {
     flex: 0 1 33%;
+
+    @media (max-width: 767px) {
+      flex: 0 1 70%;
+      & + & {
+        margin-top: 32px;
+      }
+    }
   }
 
   &__item-number {
@@ -27,6 +40,4 @@
   &__item-title {
     margin-bottom: 16px;
   }
-
-  &__item-text {}
 }

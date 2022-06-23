@@ -178,42 +178,17 @@ for ( let i = 0; i < telegramForm.length; i++ ) {
 }
 // ************************** Telegram Form ************************** //
 
-// ************************** Tabs ************************** //
-function Tabs() {
-  let bindAll = function() {
-    let menuElements = document.querySelectorAll('[data-tab]');
-    for(let i = 0; i < menuElements.length ; i++) {
-      menuElements[i].addEventListener('click', change, false);
-    }
-  };
-
-  let clear = function() {
-    let menuElements = document.querySelectorAll('[data-tab]');
-    for(let i = 0; i < menuElements.length ; i++) {
-      menuElements[i].classList.remove('active');
-      let id = menuElements[i].getAttribute('data-tab');
-      document.getElementById(id).classList.remove('active');
-    }
-  };
-
-  let change = function(e) {
-    clear();
-    e.target.classList.add('active');
-    let id = e.currentTarget.getAttribute('data-tab');
-    document.getElementById(id).classList.add('active');
-  };
-
-  bindAll();
-}
-
-const connectTabs = new Tabs();
-// ************************** Tabs ************************** //
 
 // ************************** Filter ************************ //
   const filters = document.querySelectorAll(".filter");
 
+
   filters.forEach((filter) => {
-    filter.addEventListener("click", function () {
+    filter.addEventListener("click", function (e) {
+      filters.forEach((el) => {
+        el.classList.remove("active");
+      });
+      filter.classList.add("active");
       let selectedFilter = filter.getAttribute("data-filter");
       let itemsToHide = document.querySelectorAll(
         `.filter-menu .filter-item:not([data-filter='${selectedFilter}'])`

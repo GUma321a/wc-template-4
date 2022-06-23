@@ -10,11 +10,19 @@
 
   &__item {
     flex: 0 1 45%;
+    align-items: center;
 
     @media (max-width: 999px) {
+      flex-direction: row;
+
       & + &{
-        margin-top: 40px;
+        margin-top: 50px;
       }
+    }
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -23,6 +31,19 @@
   }
 
   &__item-image {
+    flex: 1 1 50%;
+
+    @media (max-width: 999px) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 576px) {
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__autor{
     flex: 0 1 50%;
   }
 }

@@ -1,7 +1,16 @@
 .timeline {
+
   &__chronology {
     background-color: $secondary;
     padding: 80px;
+
+    @media (max-width: 767px) {
+      padding: 60px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 40px;
+    }
   }
 
   &__chronology-title{
@@ -19,6 +28,12 @@
       height: 2px;
       top: -10%;
     }
+
+    @media (max-width: 999px) {
+      &::before{
+        content: none;
+      }
+    }
   }
 
   &__chronology-item {
@@ -32,9 +47,13 @@
       background-color: $primary;
       top: -10%;
     }
-  }
 
-  &__chronology-item-year {}
+    @media (max-width: 999px) {
+      & + &{
+        margin-top: 40px;
+      }
+    }
+  }
 
   &__chronology-item-title {
     margin-top: 16px;

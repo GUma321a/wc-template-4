@@ -1,4 +1,4 @@
-.popular-blog__big-post {
+.big-post {
   background-image: url(../images/illustrations/blog-popular-blog-big.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -6,6 +6,21 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+
+    @media (max-width: 999px) {
+      margin-bottom: 40px;
+    }
+
+  &::after {
+    content: 'Trending';
+    position: absolute;
+    padding: 14px 30px;
+    background: rgba(255, 196, 146, 0.47);
+    backdrop-filter: blur(19px);
+    top: 0;
+    left: 0;
+    color: $white;
+  }
 
   &::before{
     position: absolute;
@@ -19,40 +34,13 @@
     left: 0;
   }
 
-  @media (max-width: 999px) {
-    margin-bottom: 40px;
-  }
-
-  &-wrapper{
+  &__wrapper{
     position: relative;
     padding: 236px 60px 40px;
   }
 
-  &-title {
+  &__title {
     margin-bottom: 40px;
     max-width: 451px;
   }
-
-  &-autor{}
-
-  &-inner {
-    
-  }
-
-  &-info {
-    
-  }
-
-  &-photo {
-    
-  }
-
-  &-name {}
-
-  &-date {}
-
-  &-button {
-   
-  }
-  
 }

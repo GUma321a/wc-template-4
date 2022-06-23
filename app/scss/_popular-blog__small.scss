@@ -11,20 +11,14 @@
       align-items: center;
     }
 
-    &+& {
-        margin-top: 32px;
-      }
+    & + & {
+      margin-top: 32px;
+    }
   }
-
-  &-images {}
-  
-  &-description {}
   
   &-title {
     margin-bottom: 16px;
   }
-  
-  &-text {}
 }
 
 

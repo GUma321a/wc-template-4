@@ -3,11 +3,7 @@
   background-color: $third;
 
   @media (max-width: 767px){
-    padding: 64px 0;
-  }
-
-  &__wrapper {
-    
+    margin: 40px 0 23px;
   }
 
   &__logo {
@@ -15,8 +11,6 @@
     justify-content: center;
     margin-bottom: 42px;
   }
-
-  &__logo-img {}
 
   &__menu {
     display: flex;
@@ -75,11 +69,6 @@
     margin: 0 10px;
   }
 
-  &__links-copy {}
-
-  &__links-social {
-  }
-
   &__links-social-item {
 
     &:hover{
@@ -99,6 +88,4 @@
 
     }
   }
-
-  &__links-contact-link {}
 }

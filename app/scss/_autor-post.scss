@@ -15,16 +15,9 @@
     }
   }
 
-  &__info {}
-
-  &__name {}
-
-  &__date {}
-
   &__button {
     display: flex;
-    align-items: center;
-    color: $white;
+    align-items: center; 
   
     &:hover {
       color: $primary;
@@ -36,6 +29,22 @@
   
     @media (max-width: 999px) {
       margin-top: 20px;
+    }
+
+    a{
+      color: $white;
+
+      &::after{
+        background-color: $white;
+      }
+
+      &:hover{
+        color: $primary;
+
+        &::after{
+          background-color: $primary;
+        }
+      }
     }
   }
 }

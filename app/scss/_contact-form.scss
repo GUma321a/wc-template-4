@@ -1,13 +1,14 @@
 .contact-form {
-  &__wrapper {}
+  &__form {
 
-  &__form {}
+    @media (max-width: 999px) {
+        margin-bottom: 40px;
+      }
+  }
 
   &__title {
     max-width: 515px;
   }
-
-  &__text {}
 
   &__wrapper{
     margin-bottom: 32px;
@@ -17,26 +18,33 @@
     display: flex;
     gap: 32px;
     margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      gap: 0;
+      flex-wrap: wrap;
+    }
   }
 
   &__item{
 
-    input{
-
+    @media (max-width: 767px) {
+      & + & {
+        margin-top: 30px;
+      }
     }
   }
 
   &__message {
 
     textarea{
-      width: 100%;
       resize: none;
     }
   }
 
   &__message,
   &__item{
-
+    width: 100%;
+    
     textarea,
     input{
       padding: 14px 32px;
@@ -47,17 +55,25 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 120%;
+      width: 100%;
     }
 
     textarea::placeholder,
     input::placeholder{
       color: $white;
     }
+
+    textarea:focus,
+    input:focus{
+      border-color: $primary;
+      transition: all 0.2s ease-in-out;
+    }
   }
 
   &__button-cta{
     color: $white;
     background-color: $gray-800;
+    padding: 20px 64px 20px 32px;
 
     &::after{
       background-color: $primary;

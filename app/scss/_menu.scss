@@ -23,11 +23,12 @@
     justify-content: space-between;
     padding: 32px;
     background-color: $secondary;
+    align-items: center;
+    
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
   }
-
-  &__item-title {}
-
-  &__item-price {}
 
   &__item-button {
     margin-top: 40px;

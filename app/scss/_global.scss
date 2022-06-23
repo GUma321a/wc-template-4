@@ -144,7 +144,7 @@ body {
   margin: 176px 0 160px;
 
   @media (max-width: 999px){
-    margin: 128px 0;
+    margin: 135px 0;
   }
 
   @media (max-width: 767px){
@@ -163,9 +163,9 @@ body {
     line-height: $heading-h2-height;
   }
 
-  // @media (max-width: 1299px){
-  //   font-size: $heading-h3-size;
-  // }
+  @media (max-width: 1299px){
+    font-size: $heading-h3-size;
+  }
 
   @media (max-width: 576px){
     font-size: $heading-h3-size;
