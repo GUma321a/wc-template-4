@@ -1,24 +1,33 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  gap: 5px;
+
+  @media (max-width: 999px) {
+    gap: 0;
+  }
 
 
   &__item {
     flex: 0 1 33%;
     padding: 64px;
+    background-color: rgba(0, 0, 0, 0.16);
+
+    @media (max-width: 1439px) {
+      padding: 48px;
+    }
 
     @media (max-width: 999px) {
-      flex: 0 1 45%;
-      padding: 58px;
+      padding: 42px;
+
+      & + &{
+        margin-top: 20px;
+      }
     }
 
     @media (max-width: 767px) {
-      padding: 42px;
-    }
-
-    @media (max-width: 576px) {
-      padding: 34px;
+      padding: 30px;
       flex: 0 1 100%;
     }
   }

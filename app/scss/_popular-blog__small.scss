@@ -1,7 +1,7 @@
 
-.popular-blog__small {
+.popular-blog {
   
-  &-item {
+  &__small-item {
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -13,12 +13,30 @@
 
     & + & {
       margin-top: 32px;
+
+      @media (max-width: 576px) {
+        margin-top: 40px;
+      }
     }
   }
   
-  &-title {
+  &__small-title {
     margin-bottom: 16px;
   }
+
+  &__small-images {
+    width: 100%;
+
+    img {
+      width: 100%;
+
+      @media (max-width: 576px) {
+        height: 300px;
+        object-position: top;
+      }
+    }
+  }
+
 }
 
 

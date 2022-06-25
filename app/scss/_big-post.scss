@@ -37,6 +37,16 @@
   &__wrapper{
     position: relative;
     padding: 236px 60px 40px;
+
+    @media (max-width: 767px) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    @media (max-width: 576px) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 
   &__title {

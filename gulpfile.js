@@ -53,13 +53,14 @@ function sass(){
 
 function cssLibs(){
   return src([
-    'node_modules/normalize.css/normalize.css',
-    'node_modules/@splidejs/splide/dist/css/splide-core.min.css',
+    "node_modules/normalize.css/normalize.css",
+    "node_modules/@splidejs/splide/dist/css/splide-core.min.css",
+    "node_modules/plyr/dist/plyr.css",
   ])
-  .pipe(concat('libs.min.css'))
-  .pipe(cssmin())
-  .pipe(dest('dist/css'))
-  .pipe(browserSync.stream());
+    .pipe(concat("libs.min.css"))
+    .pipe(cssmin())
+    .pipe(dest("dist/css"))
+    .pipe(browserSync.stream());
 }
 
 function js(){
@@ -72,12 +73,13 @@ function js(){
 
 function jsLibs(){
   return src([
-    'node_modules/@splidejs/splide/dist/js/splide.min.js',
+    "node_modules/@splidejs/splide/dist/js/splide.min.js",
+    "node_modules/plyr/dist/plyr.min.js",
   ])
-  .pipe(concat('libs.min.js'))
-  .pipe(uglify())
-  .pipe(dest('dist/js'))
-  .pipe(browserSync.stream());
+    .pipe(concat("libs.min.js"))
+    .pipe(uglify())
+    .pipe(dest("dist/js"))
+    .pipe(browserSync.stream());
 }
 
 function watching(){

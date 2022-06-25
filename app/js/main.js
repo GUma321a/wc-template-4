@@ -214,3 +214,254 @@ for ( let i = 0; i < telegramForm.length; i++ ) {
     });
   });
 // ************************** Filter ************************ //
+
+// ************************** Map ************************** //
+function initMap() {
+  // тут задаем центр карты
+  var myLatLng = { lat: 40.810709, lng: -73.948331 };
+
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14, // определяет масштаб карты, ее "зум"
+    center: myLatLng,
+  });
+
+  // ниже задаются стили, можете использовать https://mapstyle.withgoogle.com/ или https://snazzymaps.com/ для быстрого создания стиля,
+  // далее оттуда берете блок с кодом для стилей и вставляете вместо этого блока ниже
+  var styles = [
+    {
+      featureType: "all",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          saturation: 36,
+        },
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 40,
+        },
+      ],
+    },
+    {
+      featureType: "all",
+      elementType: "labels.text.stroke",
+      stylers: [
+        {
+          visibility: "on",
+        },
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 16,
+        },
+      ],
+    },
+    {
+      featureType: "all",
+      elementType: "labels.icon",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+    {
+      featureType: "administrative",
+      elementType: "geometry.fill",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 20,
+        },
+      ],
+    },
+    {
+      featureType: "administrative",
+      elementType: "geometry.stroke",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 17,
+        },
+        {
+          weight: 1.2,
+        },
+      ],
+    },
+    {
+      featureType: "landscape",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 20,
+        },
+      ],
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 21,
+        },
+      ],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.fill",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 17,
+        },
+      ],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.stroke",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 29,
+        },
+        {
+          weight: 0.2,
+        },
+      ],
+    },
+    {
+      featureType: "road.arterial",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 18,
+        },
+      ],
+    },
+    {
+      featureType: "road.local",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 16,
+        },
+      ],
+    },
+    {
+      featureType: "transit",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 19,
+        },
+      ],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#000000",
+        },
+        {
+          lightness: 17,
+        },
+      ],
+    },
+  ];
+
+  map.setOptions({ styles: styles });
+
+  // ниже задаем маркер - картинку и ее размер, а также точку картинки (в примере - это низ картинки, выровненный по центру - которая будет находится в указанных координатах)
+  var image = {
+    url: "./images/icons/map-pin.svg",
+    // тут маркер 30 пикселей в ширину и 118 в высоту
+    size: new google.maps.Size(50, 118),
+    // задаем начало картинки, обычно это левый верхний угол (0, 0).
+    origin: new google.maps.Point(0, 0),
+    // и точка картинки, которая будет находиться в точке вашего объекта на карте, тут - центр картинки внизу (15, 118).
+    anchor: new google.maps.Point(15, 118),
+  };
+
+  // тут создается блок, всплывающий по клику на маркер. Удобен чтоб добавить небольшой текст-описание или подсказку.
+  var contentString =
+    '<div id="map-content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h2  class="map__modal-title">WebCifra</h2>' +
+    '<div class="map__modal-text">' +
+    "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+    "Atque, culpa. Sint et earum." +
+    "</div>" +
+    "</div>";
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 350,
+  });
+
+  // здесь создается сам маркер и применяются параметры отображения
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: 'WebCifra',
+  });
+
+  var myOptions = {
+    // your other options...
+    draggable: !("ontouchend" in document),
+    
+  };
+
+  marker.addListener("click", function () {
+    infowindow.open(map, marker);
+  });
+}
+// ************************** Map ************************** //
+
+
+
+// ************************** Player *********************** //
+  const player = new Plyr("#player", {
+    controls: [
+      "play-large",
+      "play",
+      "progress",
+      "current-time",
+      "mute",
+      "volume",
+      "settings",
+      "pip",
+      "airplay",
+      "fullscreen",
+    ],
+    resetOnEnd: true,
+  });
+// ************************** Player *********************** //

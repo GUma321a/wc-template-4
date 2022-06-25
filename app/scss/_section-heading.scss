@@ -5,6 +5,10 @@
     @media (max-width: 999px) {
       margin-bottom: 64px;
     }
+
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__tagline {

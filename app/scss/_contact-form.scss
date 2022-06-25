@@ -4,6 +4,10 @@
     @media (max-width: 999px) {
         margin-bottom: 40px;
       }
+
+    @media (max-width: 756px) {
+      margin-bottom: 80px;
+    }
   }
 
   &__title {
@@ -61,12 +65,17 @@
     textarea::placeholder,
     input::placeholder{
       color: $white;
+      transition: all 0.2s ease-in-out;
     }
 
     textarea:focus,
     input:focus{
       border-color: $primary;
       transition: all 0.2s ease-in-out;
+
+      &::placeholder{
+        opacity: 0;
+      }
     }
   }
 

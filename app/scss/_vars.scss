@@ -80,7 +80,7 @@ $heading-h2-height: 121%;
     font-size: $heading-h2-size-medium;
   }
 
-  @media (max-width: 999px) {
+  @media (max-width: 767px) {
     font-size: $heading-h2-size-small;
   }
 }
@@ -90,7 +90,7 @@ $heading-h3-family: $secondary-font;
 $heading-h3-weight: 700;
 $heading-h3-size: 32px;
 $heading-h3-size-medium: 26px;
-$heading-h3-size-small: 20px;
+$heading-h3-size-small: 24px;
 $heading-h3-height: 150%;
 .heading-h3{
   font-family: $heading-h3-family;

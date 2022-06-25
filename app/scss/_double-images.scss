@@ -6,8 +6,12 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   flex: 0 1 45%;
-  gap: 48px;
+  grid-column-gap: 48px;
   padding-bottom: 140px;
+
+  img{
+    min-height: 275px;
+  }
 
   img + img{
     position: relative;
@@ -16,6 +20,7 @@
 
   @media (max-width: 767px) {
     padding-bottom: 100px;
+    grid-column-gap: 25px;
   }
 
   @media (max-width: 576px) {

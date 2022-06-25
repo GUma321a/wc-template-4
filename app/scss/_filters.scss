@@ -19,16 +19,16 @@
 }
 
 .filter-menu {
-  margin: 20px;
   display: flex;
   justify-content: center;
 }
 
 .filter {
-  margin: 20px;
+  margin-left: 20px;
 
   @media (max-width: 767px) {
     margin-left: 15px;
+    padding-top: 15px;
   }
 
   @media (max-width: 576px) {

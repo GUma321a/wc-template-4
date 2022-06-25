@@ -1,6 +1,11 @@
 .map {
   &__wrapper {
     background-color: $secondary;
+    flex-direction: row;
+
+    @media (max-width: 666px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -16,12 +21,26 @@
       padding: 30px 50px;
     }
 
+    @media (max-width: 666px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     @media (max-width: 576px) {
       padding: 20px 30px;
     }
   }
 
   &__info-item {
+
+    @media (max-width: 666px) {
+      flex: 1 1 45%;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 525px) {
+      flex: 1 1 100%;
+    }
 
     & + &{
       margin-top: 32px;

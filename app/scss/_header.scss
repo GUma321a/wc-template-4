@@ -5,11 +5,12 @@
   right: 0;
   top: 0;
   z-index: 111;
-  background-color: $black;
+  background-color: inherit;
   transition: all 0.3s ease-in-out;
 
   &__fixed {
     box-shadow: $card-shadow-m;
+    background-color: $third;
 
     @media (max-width: 576px){
       padding: 10px 0;
@@ -40,6 +41,10 @@
     display: flex;
     align-items: center;
     z-index: 1;
+
+    @media (max-width: 999px) {
+      margin-left: 0;
+    }
   }
 
   &__menu-list-item {

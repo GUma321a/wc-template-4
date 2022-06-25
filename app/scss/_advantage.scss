@@ -3,6 +3,10 @@
 
   &__title {
     flex: 0 1 40%;
+
+    @media (max-width: 999px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__text {

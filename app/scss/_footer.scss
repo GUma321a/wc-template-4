@@ -19,7 +19,11 @@
 
     @media (max-width: 767px) {
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 0px;
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
     }
   }
 
@@ -29,11 +33,12 @@
       flex: 0 1 33%;
       margin-left: 0 !important; 
       text-align: center;
+      margin-top: 24px;
     }
 
     & + & {
         margin-left: 40px;
-      }
+    }
   }
 
   &__menu-item-link {
@@ -63,10 +68,20 @@
     @media (max-width: 767px) {
       flex-wrap: wrap;
     }
+
+    @media (max-width: 374px) {
+      justify-content: center;
+    }
   }
 
   &__links-item{
     margin: 0 10px;
+  }
+
+  &__links-copy{
+    @media (max-width: 694px) {
+      order: 1;
+    }
   }
 
   &__links-social-item {

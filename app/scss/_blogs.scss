@@ -39,7 +39,15 @@
     }
 
     @media (max-width: 576px) {
-      margin: 0 auto 30px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    img{
+
+      @media (max-width: 576px) {
+        width: 100%;
+      }
     }
   }
 
