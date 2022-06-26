@@ -27,13 +27,13 @@
     }
   }
 
-  &__autor {
+  &__author {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__autor-photo {
+  &__author-photo {
     width: 49px;
     height: 48px;
     
@@ -44,6 +44,7 @@
 
   &__video {
     flex: 0 1 55%;
+    --plyr-color-main: #FFB577;
 
     @media (max-width: 999px) {
       flex: 0 1 100%;

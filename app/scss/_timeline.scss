@@ -1,6 +1,6 @@
 .timeline {
 
-  &__chronology {
+  &__wrapper {
     background-color: $secondary;
     padding: 80px;
 
@@ -13,11 +13,11 @@
     }
   }
 
-  &__chronology-title{
+  &__title{
     margin-bottom: 72px;
   }
 
-  &__chronology-wrapper {
+  &__inner {
     position: relative;
 
     &::before{
@@ -36,7 +36,7 @@
     }
   }
 
-  &__chronology-item {
+  &__item {
     position: relative;
 
     &::before{
@@ -55,11 +55,11 @@
     }
   }
 
-  &__chronology-item-title {
+  &__item-title {
     margin-top: 16px;
   }
 
-  &__chronology-item-text {
+  &__item-text {
     margin-top: 16px;
   }
 }

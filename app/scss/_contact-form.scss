@@ -16,6 +16,7 @@
 
   &__wrapper{
     margin-bottom: 32px;
+    margin-top: 40px;
   }
 
   &__inner {
@@ -36,6 +37,10 @@
         margin-top: 30px;
       }
     }
+  }
+
+  &__text{
+    margin-top: 24px;
   }
 
   &__message {
@@ -79,7 +84,7 @@
     }
   }
 
-  &__button-cta{
+  &__button{
     color: $white;
     background-color: $gray-800;
     padding: 20px 64px 20px 32px;

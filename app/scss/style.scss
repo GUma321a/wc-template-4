@@ -10,7 +10,6 @@
 // Sections
 @import '_hero';
 @import '_about';
-@import '_preview';
 @import '_testimonials';
 @import '_blog-latest';
 @import '_map';
@@ -18,20 +17,20 @@
 @import '_timeline';
 @import '_cta-info';
 @import '_story';
-@import '_popular-blog';
-@import '_blog-page-item';
-
+@import '_blog';
 
 //Components
+@import '_menu-short';
 @import '_double-images';
 @import '_features';
 @import '_section-heading';
 @import '_cards';
 @import '_menu';
-@import '_advantage';
+@import '_text-block';
 @import '_big-post';
 @import '_popular-blog__small';
-@import '_autor-post';
-@import '_blogs';
+@import '_author-post';
+@import '_articles';
 @import '_contact-form';
+@import '_text-content';
 
