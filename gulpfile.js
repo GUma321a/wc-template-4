@@ -55,7 +55,7 @@ function cssLibs(){
   return src([
     "node_modules/normalize.css/normalize.css",
     "node_modules/@splidejs/splide/dist/css/splide-core.min.css",
-    "node_modules/plyr/dist/plyr.css",
+    "node_modules/vlitejs/dist/vlite.css",
   ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
@@ -74,7 +74,8 @@ function js(){
 function jsLibs(){
   return src([
     "node_modules/@splidejs/splide/dist/js/splide.min.js",
-    "node_modules/plyr/dist/plyr.min.js",
+    "node_modules/vlitejs/dist/providers/youtube.js",
+    "node_modules/vlitejs/dist/vlite.js",
   ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())

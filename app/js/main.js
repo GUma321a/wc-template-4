@@ -449,19 +449,18 @@ function initMap() {
 
 
 // ************************** Player *********************** //
-  const player = new Plyr("#player", {
-    controls: [
-      "play-large",
-      "play",
-      "progress",
-      "current-time",
-      "mute",
-      "volume",
-      "settings",
-      "pip",
-      "airplay",
-      "fullscreen",
-    ],
-    resetOnEnd: true,
-  });
+// import VlitejsYoutube from '../../dist/providers/youtube.js'
+
+// const VlitejsYoutube = require("youtube.js");
+
+// Vlitejs.registerProvider("youtube", VlitejsYoutube);
+// // import Vlitejs from "vlitejs";
+// new Vlitejs("#player", {
+//   options: {
+//     autoHide: true,
+//     // poster: '/path/to/poster.jpg,'
+//     providerParams: {},
+//   },
+//   provider: "youtube",
+// });
 // ************************** Player *********************** //

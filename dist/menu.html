@@ -386,6 +386,7 @@
 
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
+    <!-- <script src="./js/player.min.js"></script> -->
     <script>
       window.onload = function () {
         document.body.classList.add('preloader-hidden');
@@ -395,7 +396,18 @@
         }, 500);
       };
     </script>
-    <script></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlTLEzzaGXF_KSGXX-zx11krjSYCdC9bs&callback=initMap"></script>
+    <script>
+      Vlitejs.registerProvider('youtube', VlitejsYoutube);
+      const mainCtaVideo = new Vlitejs('#player', {
+        options: {
+          poster: '../images/illustrations/video-poster.jpg',
+          playsinline: true,
+          autoHide: true,
+          providerParams: {},
+        },
+        provider: 'youtube',
+      });
+    </script>
   </body>
 </html>
